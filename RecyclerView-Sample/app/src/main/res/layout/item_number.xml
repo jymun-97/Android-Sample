@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="number"
+            type="com.sample.recyclerview_sample.Number" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="80dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:background="#E1E1E1"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/numberTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{Integer.toString(number.value)}"
+            android:textColor="@color/black"
+            android:textSize="50sp"
+            android:textStyle="bold"
+            tools:text="0" />
+
+    </LinearLayout>
+</layout>
