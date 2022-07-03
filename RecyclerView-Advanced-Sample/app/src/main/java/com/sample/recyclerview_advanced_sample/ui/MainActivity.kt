@@ -31,6 +31,7 @@ class MainActivity : AppCompatActivity() {
             lifecycleOwner = this@MainActivity
         }
 
+        
         contactViewModel.eventResponse.observe(this) {
             when (it) {
                 EventResponse.FAIL -> {
